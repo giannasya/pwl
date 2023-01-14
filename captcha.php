@@ -13,8 +13,8 @@ function acakCaptcha(){
 
 $code = acakCaptcha();
 $_SESSION["code"] = $code;
-$wh = imagecreatetruecolor(173, 50);
-$bgc = imagecolorallocate($wh, 22, 86, 165);
+$wh = imagecreatetruecolor(150, 40);
+$bgc = imagecolorallocate($wh, 11, 37, 60);
 $fc = imagecolorallocate($wh, 223, 230, 233);
 
 imagefill($wh, 0, 0, $bgc);
