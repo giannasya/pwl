@@ -50,13 +50,11 @@ if (isset($_POST['submit'])){
             <i class="fas fa-lock"></i>
             <input type="password" placeholder="Password" required>
           </div>
-          <div class = "form-group">
-                        <label for="Captcha">Captcha</label>
-                        <td><img src="captcha.php" alt="gambar" /> </td>
-                        <br>
-                        <br>
+          <div class = "row">
+                        <td><center><img src="captcha.php" alt="gambar"/></center></td>
+                        <td>
                         <input type="Captcha" class="form-control" id="Captcha" name="Captcha" placeholder="Masukkan kode Captcha">
-                                            <?php if ($validate != ''){ ?>
+                            <?php if ($validate != ''){ ?>
                             <p class="text-danger"><?=$validate;?></p>
                         <?php }?>
                     </div>
